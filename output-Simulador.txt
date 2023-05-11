@@ -1,0 +1,68 @@
+Thread 3 consumió un recurso. Recursos disponibles: 9
+Thread 2 consumió un recurso. Recursos disponibles: 8
+Thread 1 consumió un recurso. Recursos disponibles: 7
+Thread 3 devolvió un recurso. Recursos disponibles: 8
+Thread 3 consumió un recurso. Recursos disponibles: 7
+Thread 3 devolvió un recurso. Recursos disponibles: 8
+Thread 3 consumió un recurso. Recursos disponibles: 7
+Thread 3 devolvió un recurso. Recursos disponibles: 8
+Thread 3 consumió un recurso. Recursos disponibles: 7
+Thread 3 devolvió un recurso. Recursos disponibles: 8
+Thread 3 consumió un recurso. Recursos disponibles: 7
+Thread 3 devolvió un recurso. Recursos disponibles: 8
+Thread 2 devolvió un recurso. Recursos disponibles: 9
+Thread 2 consumió un recurso. Recursos disponibles: 8
+Thread 2 devolvió un recurso. Recursos disponibles: 9
+Thread 2 consumió un recurso. Recursos disponibles: 8
+Thread 2 devolvió un recurso. Recursos disponibles: 9
+Thread 2 consumió un recurso. Recursos disponibles: 8
+Thread 2 devolvió un recurso. Recursos disponibles: 9
+Thread 2 consumió un recurso. Recursos disponibles: 8
+Thread 2 devolvió un recurso. Recursos disponibles: 9
+Thread 1 devolvió un recurso. Recursos disponibles: 10
+Thread 1 consumió un recurso. Recursos disponibles: 9
+Thread 1 devolvió un recurso. Recursos disponibles: 10
+Thread 1 consumió un recurso. Recursos disponibles: 9
+Thread 1 devolvió un recurso. Recursos disponibles: 10
+Thread 1 consumió un recurso. Recursos disponibles: 9
+Thread 1 devolvió un recurso. Recursos disponibles: 10
+Thread 1 consumió un recurso. Recursos disponibles: 9
+Thread 1 devolvió un recurso. Recursos disponibles: 10
+os@debian:~/Desktop$ gcc -std=c99 -o Simulador Simulador.c -lpthread && ./Simulador 3
+Simulador.c: In function ‘thread_func’:
+Simulador.c:25: warning: implicit declaration of function ‘sleep’
+Thread 3 consume un recurso. Quedan 9 recursos.
+Thread 3 espera...
+Thread 4 consume un recurso. Quedan 8 recursos.
+Thread 4 espera...
+Thread 2 consume un recurso. Quedan 7 recursos.
+Thread 2 espera...
+Thread 1 consume un recurso. Quedan 6 recursos.
+Thread 1 espera...
+Thread 0 consume un recurso. Quedan 5 recursos.
+Thread 0 espera...
+Thread 3 consume un recurso. Quedan 4 recursos.
+Thread 3 espera...
+Thread 4 consume un recurso. Quedan 3 recursos.
+Thread 4 espera...
+Thread 1 consume un recurso. Quedan 2 recursos.
+Thread 1 espera...
+Thread 4 consume un recurso. Quedan 1 recursos.
+Thread 4 espera...
+Thread 2 consume un recurso. Quedan 0 recursos.
+Thread 2 espera...
+Thread 0 consume un recurso. Quedan -1 recursos.
+Thread 0 espera...
+Thread 1 consume un recurso. Quedan -2 recursos.
+Thread 1 espera...
+Thread 4 termina.
+Thread 3 consume un recurso. Quedan -3 recursos.
+Thread 3 espera...
+Thread 1 termina.
+Thread 2 consume un recurso. Quedan -4 recursos.
+Thread 2 espera...
+Thread 0 consume un recurso. Quedan -5 recursos.
+Thread 0 espera...
+Thread 0 termina.
+Thread 3 termina.
+Thread 2 termina.
